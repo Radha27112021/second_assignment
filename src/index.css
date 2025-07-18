@@ -1,0 +1,29 @@
+
+:root {
+  background-color: black;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  width: 1200px;
+  height: 675px;
+  background-image: url("./assets/background.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+/* additional home image css */
+.custom-layout {
+  width: 789.04px;
+  height: 1191.5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* top: -326px;
+  left: 64px;
+  transform: rotate(-29.76deg); */
+}
+
+
+
