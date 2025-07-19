@@ -117,7 +117,11 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+.step-box.active {
+  background: linear-gradient(87.05deg, #8920FE 17.68%, #F30DE7 97.26%);
+  border: 2px solid white;
+  color: #fff;
+}
 .step-number {
   font-family: 'Poppins', sans-serif;
   font-size: 38px;
@@ -150,26 +154,56 @@ border-radius: 14px;
 border-width: 1px;
 transform: rotate(0deg);
 opacity: 1;
-color: grey;
+color: darkgray;
 }
 
-/* Responsive design */
-@media (max-width: 1024px) {
-  .home-title { font-size: 36px; }
-}
-
-@media (max-width: 768px) {
-  .home-container { flex-direction: column; align-items: center; }
-  .left-card { width: 100%; max-width: 400px; }
-  .steps-container { width: 100%; }
-  .step-number { font-size: 32px; }
-}
-
+/* Responsive design for small mobiles (max-width: 480px) */
 @media (max-width: 480px) {
-  .home-title { font-size: 28px; }
-  .left-title { font-size: 24px; }
-  .step-number { font-size: 24px; }
-  .step-title { font-size: 16px; }
-  .step-description { font-size: 12px; }
-  .connect-button { font-size: 14px; padding: 6px 14px; }
+  /* Adjust the overall padding if needed */
+  .home {
+    padding: 20px 12px;
+  }
+
+  /* Make left card full width */
+  .left-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .left-title {
+    font-size: 24px;
+    margin: 16px;
+  }
+
+  .connect-button {
+    font-size: 14px;
+    padding: 6px 14px;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  /* Make steps container full width */
+  .steps-container {
+    max-width: 100%;
+  }
+
+  .step-box {
+    flex-direction: column;           /* stack number and text vertically */
+    align-items: flex-start;
+  }
+
+  .step-number {
+    font-size: 12px;
+  }
+
+  .step-title {
+    font-size: 16px;
+    width: 100%;                      /* allow title to fill container */
+    height: auto;
+  }
+
+  .step-description {
+    font-size: 12px;
+    width: 100%;                      /* allow text to wrap nicely */
+  }
 }
