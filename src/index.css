@@ -193,17 +193,17 @@ color: darkgray;
   }
 
   .step-number {
-    font-size: 12px;
+    font-size: 30px;
   }
 
   .step-title {
-    font-size: 16px;
+    font-size: 24px;
     width: 100%;                      /* allow title to fill container */
     height: auto;
   }
 
   .step-description {
-    font-size: 12px;
+    font-size: 20px;
     width: 100%;                      /* allow text to wrap nicely */
   }
 }
