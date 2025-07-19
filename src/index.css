@@ -1,29 +1,175 @@
-
-:root {
-  background-color: black;
-  color: #ffffff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Poppins:wght@600&family=Lato:wght@400&display=swap');
 
 body {
   margin: 0;
-  width: 1200px;
-  height: 675px;
+  padding: 0;
+  background: #02040D;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 16px;
+}
+
+.custom-layout {
+  position: absolute;
+  top: -326px;
+  left: 64px;
+  width: 789px;
+  height: 1191.5px;
   background-image: url("./assets/background.png");
   background-size: cover;
   background-position: center;
-  color: #ffffff;
+  transform: rotate(45.89deg);
+  /* transform: rotate(-29.76deg); */
+  z-index: 0;
 }
-/* additional home image css */
-.custom-layout {
-  width: 789.04px;
-  height: 1191.5px;
+
+.home-header {
+  text-align: center;
   position: relative;
-  top: 0;
-  left: 0;
-  /* top: -326px;
-  left: 64px;
-  transform: rotate(-29.76deg); */
+  z-index: 1;
 }
 
+.home-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
 
+.home-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
 
+/* Left card */
+.left-card {
+  width: 331px;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD3D;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.left-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 24px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.connect-button {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: linear-gradient(87.05deg, #8920FE 17.68%, #F30DE7 97.26%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.connect-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(243, 13, 231, 0.4);
+}
+
+/* Steps container */
+.steps-container {
+  max-width: 645px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.step-box {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 16px 24px;
+  background: #101010;
+  border-radius: 14px;
+  border: 1px solid #FFFFFF1C;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.step-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-title {
+  width: 151px;
+height: 54px;
+top: 167px;
+left: 598px;
+opacity: 1;
+font-family: 'Poppins';
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 4%;
+
+}
+
+.step-description {
+  width: 645px;
+height: 100px;
+top: 272px;
+left: 452px;
+border-radius: 14px;
+border-width: 1px;
+transform: rotate(0deg);
+opacity: 1;
+color: grey;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .home-title { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+  .home-container { flex-direction: column; align-items: center; }
+  .left-card { width: 100%; max-width: 400px; }
+  .steps-container { width: 100%; }
+  .step-number { font-size: 32px; }
+}
+
+@media (max-width: 480px) {
+  .home-title { font-size: 28px; }
+  .left-title { font-size: 24px; }
+  .step-number { font-size: 24px; }
+  .step-title { font-size: 16px; }
+  .step-description { font-size: 12px; }
+  .connect-button { font-size: 14px; padding: 6px 14px; }
+}
