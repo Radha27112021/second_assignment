@@ -147,7 +147,7 @@ letter-spacing: 4%;
 
 .step-description {
   width: 645px;
-height: 100px;
+/* height: 100px; */
 top: 272px;
 left: 452px;
 border-radius: 14px;
