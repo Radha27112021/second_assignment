@@ -23,8 +23,7 @@ body {
   background-image: url("./assets/background.png");
   background-size: cover;
   background-position: center;
-  transform: rotate(45.89deg);
-  /* transform: rotate(-29.76deg); */
+  transform: rotate(29.76deg);
   z-index: 0;
 }
 
